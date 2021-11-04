@@ -1,0 +1,11 @@
+C:\Users\Alumno\source\repos\Brizuela_Gabriel\Prueba_Login\Prueba_Login\bin\Debug\Prueba_Login.exe.config
+C:\Users\Alumno\source\repos\Brizuela_Gabriel\Prueba_Login\Prueba_Login\bin\Debug\Prueba_Login.exe
+C:\Users\Alumno\source\repos\Brizuela_Gabriel\Prueba_Login\Prueba_Login\bin\Debug\Prueba_Login.pdb
+C:\Users\Alumno\source\repos\Brizuela_Gabriel\Prueba_Login\Prueba_Login\obj\Debug\Prueba_Login.csproj.AssemblyReference.cache
+C:\Users\Alumno\source\repos\Brizuela_Gabriel\Prueba_Login\Prueba_Login\obj\Debug\Prueba_Login.Form1.resources
+C:\Users\Alumno\source\repos\Brizuela_Gabriel\Prueba_Login\Prueba_Login\obj\Debug\Prueba_Login.Properties.Resources.resources
+C:\Users\Alumno\source\repos\Brizuela_Gabriel\Prueba_Login\Prueba_Login\obj\Debug\Prueba_Login.csproj.GenerateResource.cache
+C:\Users\Alumno\source\repos\Brizuela_Gabriel\Prueba_Login\Prueba_Login\obj\Debug\Prueba_Login.csproj.CoreCompileInputs.cache
+C:\Users\Alumno\source\repos\Brizuela_Gabriel\Prueba_Login\Prueba_Login\obj\Debug\Prueba_Login.exe
+C:\Users\Alumno\source\repos\Brizuela_Gabriel\Prueba_Login\Prueba_Login\obj\Debug\Prueba_Login.pdb
+C:\Users\Alumno\source\repos\Brizuela_Gabriel\Prueba_Login\Prueba_Login\obj\Debug\Prueba_Login.Form2.resources
