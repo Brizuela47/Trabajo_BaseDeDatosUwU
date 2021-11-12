@@ -1,0 +1,71 @@
+create database Et26
+use Et26
+
+
+create table alumno(matricula varchar(8), DNI int, nombre varchar (30), apellido varchar(30), edad int,sexo nchar, domicilio varchar(30),
+constraint pk_kmatricula primary key(matricula))
+
+
+INSERT INTO alumno values('0001', 12345, 'Juan', 'Perez', 18, 'M', 'Av. Jujuy 200')
+INSERT INTO alumno values('0002', 67890, 'Ana', 'Lopez', 20, 'F', 'San Pedrito 500')
+INSERT INTO alumno values('0003', 98765, 'Pedro', 'Perez', 15, 'M', 'Independencia 700')
+INSERT INTO alumno values('0004', 54231, 'Vero', 'Martinez', 19, 'M', 'Rivadavia 1000')
+
+/*Crear la vista*/
+CREATE VIEW Valumnos
+AS
+ Select * from alumno
+GO
+
+
+/*Modificar la vista (en esta ocasion hicimos que se deje de ver el DNI y LA DIRECCION)*/
+ALTER VIEW Valumnos
+AS
+select matricula, nombre, apellido, edad, sexo from alumno
+GO
+
+
+/*Esto es para modificar o actualizar algo en la lista (en este caso con condicion, si no la tuviera todos se llamarian Pepe)*/
+UPDATE Valumnos
+set nombre = 'Pepe' WHERE nombre = 'Pedro'
+
+
+/*Esto es para llamar y visualizar la View UwU*/
+select * from Valumnos
+
+
+
+
+
+create table Cliente(matricula varchar(8), DNI int, nombre varchar (30), apellido varchar(30), edad int,sexo nchar, domicilio varchar(30), Usuario varchar(30), contraseña varchar(30),
+constraint pk_kDNI primary key(DNI))
+
+
+INSERT INTO Cliente values('0001', 12345, 'Juan', 'Perez', 18, 'M', 'Av. Jujuy 200', 'JuancitoOwO', 'Nashe')
+INSERT INTO Cliente values('0002', 67890, 'Ana', 'Lopez', 20, 'F', 'San Pedrito 500',  'LopecitaUwU', 'Balbuni')
+INSERT INTO Cliente values('0003', 98765, 'Pedro', 'Perez', 15, 'M', 'Independencia 700', 'PedritoAwA', 'Porcelana')
+INSERT INTO Cliente values('0004', 99231, 'Vero', 'Martinez', 19, 'F', 'Rivadavia 1000',  'Verita7w7', 'cuscus')
+
+
+CREATE VIEW VCliente
+AS
+ Select DNI, domicilio, Usuario, contraseña from Cliente
+GO
+
+
+ALTER VIEW VCliente
+with encryption
+AS
+ Select DNI, domicilio, Usuario, contraseña from Cliente
+GO
+
+ALTER VIEW VCliente
+AS
+ Select nombre, apellido from Cliente
+GO
+
+
+select * from VCliente
+
+
+sp_helptext VCliente
